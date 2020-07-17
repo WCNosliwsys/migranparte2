@@ -33,7 +33,7 @@ public class Multimedia3  extends AppCompatActivity implements SurfaceHolder.Cal
             mediaPlayer = new MediaPlayer();
             mediaPlayer.setOnPreparedListener(this);
             try {
-                mediaPlayer.setDataSource("https://migrandiosaappwilson.000webhostapp.com/dancing.mp3");
+                mediaPlayer.setDataSource("https://www.partnersinrhyme.com/pir/libs/media/Arabian_Salsa_2.wav");
                 mediaPlayer.prepare();
             } catch (IOException e) {
             }
@@ -67,11 +67,11 @@ public class Multimedia3  extends AppCompatActivity implements SurfaceHolder.Cal
             @Override
             public boolean dispatchKeyEvent(KeyEvent event) {
                 if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
-                    if (mediaPlayer != null) {
-                        mediaPlayer.reset();
-                        mediaPlayer.release();
-                        mediaPlayer = null;
-                    }
+                        if (mediaPlayer != null) {
+                            mediaPlayer.reset();
+                            mediaPlayer.release();
+                            mediaPlayer = null;
+                        }
                     finish();
                     return true;
                 }
