@@ -2,7 +2,7 @@
     <style name="miEstilo">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <!--<item name="android:elevation">6dp</item>-->
+        <item name="android:elevation">6dp</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:padding">8dp</item>
         <item name="android:background">#e6e6e6</item>
