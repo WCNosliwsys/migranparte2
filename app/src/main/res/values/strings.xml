@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">migranparte2</string>
+    <string name="drawer_open">esta abierto</string>
+    <string name="drawer_close">esta cerrado</string>
 </resources>
