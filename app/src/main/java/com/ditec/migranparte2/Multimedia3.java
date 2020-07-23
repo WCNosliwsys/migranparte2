@@ -3,6 +3,7 @@ package com.ditec.migranparte2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -32,11 +33,12 @@ public class Multimedia3  extends AppCompatActivity implements SurfaceHolder.Cal
         if(mediaPlayer==null) {
             mediaPlayer = new MediaPlayer();
             mediaPlayer.setOnPreparedListener(this);
-            try {
+            startService(new Intent(this, miIntentServiciecargarmusica.class));
+/*            try {
                 mediaPlayer.setDataSource("https://www.partnersinrhyme.com/pir/libs/media/Arabian_Salsa_2.wav");
                 mediaPlayer.prepare();
             } catch (IOException e) {
-            }
+            }*/
             construirMediaController();
         }
         else{
